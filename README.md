@@ -8,11 +8,12 @@ From zero to up-and-running in no time flat!
 
 Enter this `wsl-dev-quickstart` project! How much of the WSL/Docker config process can we automate? _Let's find out!_
 
-========
+--------
 
 What follows is a WSL/Docker/Dev onboarding guide, with all of the now-automated steps are ~~crossed out~~. Let's see how much of the manual process we can automate! (**We** means me+you. Submit a [Pull Request](docs/CONTRIBUTING.md) if you think you can make this a _more-perfect_ automation.)
 
-========
+--------
+
 ## Step 0. DO ALL THE THINGS!
 
 _**Description:** Run a script to take care of everything (or at least a much as possible as of this writing!)_
@@ -23,6 +24,7 @@ _**Instructions:**_
 3. Keep reading and do anything that's not yet ~~crossed out~~ below.
 4. If you've found a way to impove the automation, [submit a Pull Request](docs/CONTRIBUTING)!
 
+--------
 
 ## Step 1: Install Git and Clone our Repo
 
@@ -39,6 +41,7 @@ _**Instructions (Windows):** _
 5. Open the new repo folder (e.g. "c:\Files\Source\propensity_to_buy\") in VS Code (or your favorite IDE) to confirm that the code is successfully downloaded.
 6. If necessary, use the IDE or command line to switch branches. E.g
 
+--------
 
 ## Step 2: Install Ubuntu
 
@@ -51,14 +54,12 @@ _**Estimated time:** 15-25 minutes (including one system restart)_
 
 2. ~~Check the boxes for "Hyper-V" (needed for Docker) and "Windows Subsystem for Linux"~~
 3. ~~Press "OK", wait for install.~~
-
 4. _(Restart will be required.)_
 5. *Install WSL Ubuntu:* Hit Win+R & paste `ms-windows-store://pdp/?ProductId=9NBLGGH4MSV6` and click "Install")
    * Select "Ubuntu" app (with no version number) and click "Install"
    * _(Wait for Ubuntu install to complete.)_
 8. Open the new Ubuntu app from the start menu (or hit Win+R & paste `ms-windows-store://pdp/?ProductId=9NBLGGH4MSV6` and click "Launch")
 9. On first run, you will need to pick a unix-compatible user name and password. _(Dot character not allowed in user name.)_
-
 10. Run `lsb_release -a` to check your version number. _(Default "stable" as of this writing is 18.04.)_
 11. Run ```python3 -V** to check the Python version number. _(Default as of this writing is 3.6.5.)_
     - _Take note!: Your entry points to run Python are "python3" and "pip3" (not "python" and "pip")_
@@ -73,6 +74,8 @@ _**Estimated time:** 15-25 minutes (including one system restart)_
 
 * *See also:*
 - [https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
+
+--------
 
 ## Step 3: Install Docker
 
@@ -113,6 +116,8 @@ Expose daemon on tcp://... without TLS.
 **See also:**
 - [https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
 - [https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04)
+
+--------
 
 ## Step 4: Install VS Code
 
