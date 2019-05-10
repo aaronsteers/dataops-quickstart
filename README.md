@@ -34,8 +34,8 @@ _**Estimated time:** 25-45 minutes_
 
 _**Instructions (Windows):** _
 
-1. Download and install **GitHub Desktop**: [https://desktop.github.com/](https://desktop.github.com/)
-2. Download and install **Git for Windows**: [https://gitforwindows.org/](https://gitforwindows.org/)
+1. ~~Download and install **GitHub Desktop**: [https://desktop.github.com/](https://desktop.github.com/)~~
+2. ~~Download and install **Git for Windows**: [https://gitforwindows.org/](https://gitforwindows.org/)~~
 3. (Optional:) Open GitHub settings and change your default repository settings to something like `C:\Files\Source\`
 4. Open GitHub Desktop, select File → Clone Repository → URL → `https://github.com/aaronsteers/wsl-dev-quickstart.git`
 5. Open the new repo folder (e.g. "c:\Files\Source\propensity_to_buy\") in VS Code (or your favorite IDE) to confirm that the code is successfully downloaded.
@@ -85,21 +85,18 @@ _**Estimated time:** 25-45 minutes._
 
 _**Instructions:**_
 
-1. Install **docker-ce** on your Windows or Mac at [http://www.DockerHub.com](http://www.DockerHub.com)
+1. ~~Install **docker-ce** on your Windows or Mac at [http://www.DockerHub.com](http://www.DockerHub.com)~~
 2. _(Restart may be required.)_
-3. Confirm docker is working (in Windows) by executing the following from command line: `docker run -it hello-world**
+3. ~~Confirm docker is working (in Windows) by executing the following from command line: `docker run -it hello-world`~~
 4. Open Docker Settings (on Windows: right-click the Docker icon in the lower-right taskbar).
-5. (Windows only:) Select the option to 
-
-Expose daemon on tcp://... without TLS.
+5. Select the option to `Expose daemon on tcp://... without TLS.`
     - _(This allows Ubuntu's Docker client to talk to the Docker server running on Windows)_
-
-6. (Mac+Windows:) From the "Shared Drives" tab, click to share your primary hard drive (e.g. "C" on Windows)
-7. (Windows only:) Tell docker on your Ubuntu system how to talk to the Docker server on Windows:
+6. From the "Shared Drives" tab, click to share your primary hard drive (e.g. "C" on Windows)
+7. Tell docker on your Ubuntu system how to talk to the Docker server on Windows:
     1. Open Ubuntu
     2. Execute `docker version` to confirm the docker version number _(As of this writing: `18.09.2**)_
         - If this fails, see WSL install instructions above, or run `sudo apt-get install docker.io`    3. Execute `docker run -it hello-world`
-            - _(The first time you run this, it should fail with the message: `Cannot connect to the Docker daemon at...")`
+            - _(The first time you run this, it should fail with the message: `Cannot connect to the Docker daemon at...`)
     4. Execute (only once): `echo "export DOCKER_HOST=[tcp://localhost:2375]()" >> ~/.bashrc`
         - Close and reopen bash or execute `source ~/.bashrc` to refresh your settings.
     5. Map `/mnt/c/` to `/c/`.
@@ -126,7 +123,7 @@ _**Description:** Visual Studio Code ("VS Code") is a modern and lightweight IDE
 _**Estimated time:** 25-45 minutes_
 
 **_Instructions:_**
-1. Download and install VS Code from [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+1. ~~Download and install VS Code from [https://code.visualstudio.com/download](https://code.visualstudio.com/download)~~
 2. Take a look at the Getting Started Guide if you are new: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs)
 3. If you plan to use multiple machines, you will want to install and configure the **[Settings Sync](https://itnext.io/settings-sync-with-vs-code-c3d4f126989)** extension. _(Can takes 15-30 minutes.)_
 4. Other helpful extensions (all are optional):
