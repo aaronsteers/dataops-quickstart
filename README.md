@@ -4,16 +4,16 @@ From zero to up-and-running in no time flat!
 
 ## Q. Why do we need a quickstart for WSL Development?
 
-*A.* As I was writing my third wiki page on the topc `how to configure WSL and Docker on Windows` - and after 2 Stackoverflow answers on the same topic - I _finally_ realized: _it just shouldn't be this hard!!!!_
+*A.* As I was writing my third internal wiki page on the topic of "how to configure WSL and Docker on Windows" - and after 2 Stackoverflow answers on the same topic - I _finally_ realized: _it shouldn't be this hard!!!!_
 
-Enter `wsl-dev-quickstart`! *How much of the WSL/Docker config can we automate??* _Let's find out together!_
-
-========
-
-What follows is the previously-mentioned WSL/Docker/Dev wiki. Let's see how much of the ~~manual process~~ we can automate! (**We** mean me+you. Submit a [Pull Request]() if you think you can make this a _more-perfect_ automation.)
+Enter `wsl-dev-quickstart`! How much of the WSL/Docker config process can we automate? _Let's find out!_
 
 ========
-## Step 0. DO (ALMOST!) ALL THE THINGS!
+
+What follows is the previously-created WSL/Docker/Dev wiki. All of the now-automated steps are ~~crossed out~~. Let's see how much of the manual process we can automate! (**We** means me+you. Submit a [Pull Request](docs/CONTRIBUTING.md) if you think you can make this a _more-perfect_ automation.)
+
+========
+## Step 0. DO ALL THE THINGS!
 
 _**Description:** Run a script to take care of everything (or at least a much as possible as of this writing!)_
 _**Estimated time:** 2 minutes_
@@ -32,17 +32,19 @@ _**Estimated time:** 15-25 minutes (including one system restart)_
 
 **_Instructions:_**
 
-~~1. Go to "Turn Windows Features on or off"
-    - _hit the "Windows" key → type "Windows Features" → press enter when the correct item displays_~~
+1. ~~Go to "Turn Windows Features on or off"~~
+    - ~~_hit the "Windows" key → type "Windows Features" → press enter when the correct item displays_~~
 
-~~2. Check the boxes for "Hyper-V" (needed for Docker) and "Windows Subsystem for Linux"~~
-~~3. Press "OK", wait for install.~~
+2. ~~Check the boxes for "Hyper-V" (needed for Docker) and "Windows Subsystem for Linux"~~
+3. ~~Press "OK", wait for install.~~
+
 4. _(Restart will be required.)_
-5. Go to the Windows Store and search for "Ubuntu"
-6. Select "Ubuntu" app (with no version number) and click "Install"
-7. _(Wait for Ubuntu install to complete.)_
-8. Open the new Ubuntu app from the start menu.
+5. *Install WSL Ubuntu:* Hit Win+R & paste `ms-windows-store://pdp/?ProductId=9NBLGGH4MSV6` and click "Install")
+   * Select "Ubuntu" app (with no version number) and click "Install"
+   * _(Wait for Ubuntu install to complete.)_
+8. Open the new Ubuntu app from the start menu (or hit Win+R & paste `ms-windows-store://pdp/?ProductId=9NBLGGH4MSV6` and click "Launch")
 9. On first run, you will need to pick a unix-compatible user name and password. _(Dot character not allowed in user name.)_
+
 10. Run **
 
 lsb_release -a** to check your version number. _(Default "stable" as of this writing is 18.04.)_
