@@ -18,13 +18,29 @@ What follows is the previously-created WSL/Docker/Dev wiki. All of the now-autom
 _**Description:** Run a script to take care of everything (or at least a much as possible as of this writing!)_
 _**Estimated time:** 2 minutes_
 _**Instructions:**_
-1. Either clone this repo or download the script.
+1. Either [clone this repo](x-github-client://openRepo/https://github.com/aaronsteers/wsl-dev-quickstart) or [download the script](https://raw.githubusercontent.com/aaronsteers/wsl-dev-quickstart/feat/mvp/do_all_the_things.bat).
 2. Run the automated script: `do_all_the_things.bat`
-3. Keep reading and do anything that's not yet ~~crossed out.~~
+3. Keep reading and do anything that's not yet ~~crossed out~~ below.
 4. If you've found a way to impove the automation, [submit a Pull Request](docs/CONTRIBUTING)!
 
 
-### Step 1. Install Ubuntu
+## Step 1: Install Git and Clone our Repo
+
+_**Description:** Git is needed in order to clone our code repositories and commit new code._
+
+_**Estimated time:** 25-45 minutes_
+
+_**Instructions (Windows):** _
+
+1. Download and install **GitHub Desktop**: [https://desktop.github.com/](https://desktop.github.com/)
+2. Download and install **Git for Windows**: [https://gitforwindows.org/](https://gitforwindows.org/)
+3. (Optional:) Open GitHub settings and change your default repository settings to something like `C:\Files\Source\`
+4. Open GitHub Desktop, select File → Clone Repository → URL → `https://github.com/aaronsteers/wsl-dev-quickstart.git`
+5. Open the new repo folder (e.g. "c:\Files\Source\propensity_to_buy\") in VS Code (or your favorite IDE) to confirm that the code is successfully downloaded.
+6. If necessary, use the IDE or command line to switch branches. E.g
+
+
+## Step 2: Install Ubuntu
 
 _**Description:** Allows you to run Ubuntu natively on your Windows machine, courtesy of Windows Subsystem for Linux (WSL)._
 
@@ -88,7 +104,7 @@ sudo apt-get install jq**
 
 - [https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
 
-### Install Docker
+## Step 3: Install Docker
 
 _**Description:** Allows you to execute linux containers on your machine and create your own containerized apps._
 
@@ -155,7 +171,7 @@ docker run -it hello-world**_ (this time it should work!)_
 - [https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
 - [https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04)
 
-### Install VS Code
+## Step 4: Install VS Code
 
 _**Description:** Visual Studio Code ("VS Code") is a modern and lightweight IDE with a [rapidly growing user base](https://triplebyte.com/blog/editor-report-the-rise-of-visual-studio-code)__. VS Code has monthly product releases, and supports for virtually all mainstream languages and operating systems._
 
@@ -174,21 +190,3 @@ _**Estimated time:** 25-45 minutes_
     - "YAML"
 
 5. (Optional) Change the default terminal in VS Code to "wsl" or "bash": &lt;Ctrl+Shift+P&gt; → type "Switch Terminal" → &lt;Enter&gt;
-
-### Install Git and Clone our Repo
-
-_**Description:** Git is needed in order to clone our code repositories and commit new code._
-
-_**Estimated time:** 25-45 minutes_
-
-_**Instructions (Windows):** _
-
-1. Download and install **GitHub Desktop**: [https://desktop.github.com/](https://desktop.github.com/)
-2. Download and install **Git for Windows**: [https://gitforwindows.org/](https://gitforwindows.org/)
-3. (Optional:) Open GitHub settings and change your default repository settings to something like "C:\Files\Source\"
-4. Open GitHub Desktop, select File → Clone Repository → URL →
- 
-
-https://bitbucket.org/slalom-consulting/propensity_to_buy.git
-5. Open the new repo folder (e.g. "c:\Files\Source\propensity_to_buy\") in VS Code (or your favorite IDE) to confirm that the code is successfully downloaded.
-6. If necessary, use the IDE or command line to switch branches. E.g
