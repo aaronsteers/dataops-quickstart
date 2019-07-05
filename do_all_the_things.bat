@@ -17,13 +17,17 @@ echo Installing Docker Desktop ('choco install docker-desktop')...
 echo:
 choco install docker-desktop
 echo:
+echo Installing VS Code ('choco install vscode')...
+echo:
+choco install vscode
+echo:
 echo Installing Git ('choco install git.install --params "/GitOnlyOnPath /SChannel /NoAutoCrlf /WindowsTerminal"')...
 echo:
 choco install git.install --params "/GitOnlyOnPath /SChannel /NoAutoCrlf /WindowsTerminal"
 echo:
-echo Installing VS Code ('choco install vscode')...
+echo Installing Python 3.7+ ('choco install python3')...
 echo:
-choco install vscode
+choco install python3
 echo:
 echo Installing Ubuntu 18.04 ('choco install wsl-ubuntu-1804')...
 echo:
