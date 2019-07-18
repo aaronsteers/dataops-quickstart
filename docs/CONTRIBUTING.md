@@ -3,12 +3,13 @@
 
 ### Can you do it better?
 
-* Have you found a bug? A _better_ way to do it?
-* Do you know how to write test scripts for this stuff?
+* Did you find a bug?
+* A better way to do it?
+* Know how to write tests?
 
-**Let me know!** _Create a Pull Request with your changes and I'll be happy to review and incorporate your change._
+**Let us know!** _Create a Pull Request with your changes and we'll happily incorporate your change._
 
 
-### Is the code not working?
+### Is something broken?
 
-[Submit an issue](https://github.com/aaronsteers/wsl-dev-quickstart/issues/new) so we can make this better and easier for the next person!
+[Submit an issue](https://github.com/aaronsteers/dataops-quickstart/issues/new) so we can make this better and easier for the next person!
